@@ -1,0 +1,57 @@
+{% extends 'partials/_layout.html' %}
+
+{% block body %}
+    <div class="container-fluid">
+
+        <div class="panel panel-default">
+            <div class="panel-body">
+
+
+                <table id="workers-table" class="table table-bordered table-striped">
+                    <thead>
+                    <tr>
+                        <th>Request ID # {{ test.request_id }}</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr id="{{ test.request_id }}">
+                        <td>RequestID</td>
+                        <td><a href="test/{{ test.request_id }}">{{ test.request_id }}</a></td>
+                    </tr>
+                    <tr>
+                        <td>Requester</td>
+                        <td>{{ test.requester }}</td>
+                    </tr>
+                    <tr>
+                        <td>Status</td>
+                        <td>
+                <span class="label label-{{ test.label }}"
+                      id="run_log_status_{{ test.request_id }}">{{ test.status }}</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Test creation time</td>
+                        <td>{{ test.creation_time }}</td>
+                    </tr>
+                    <tr>
+                        <td>Test environment</td>
+                        <td>{{ test.env_id }}</td>
+                    </tr>
+                    <tr>
+                        <td>Test template</td>
+                        <td>{{ test.template }}</td>
+                    </tr>
+                    <tr>
+                        <td>Test PlanID</td>
+                        <td><a href="/">1</a></td>
+                    </tr>
+                    <tr>
+                        <td>Run log</td>
+                        <td id="run_log_{{ test.request_id }}">{{ test.run_log | safe }}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}

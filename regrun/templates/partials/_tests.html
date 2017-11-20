@@ -1,0 +1,31 @@
+<table id="workers-table" class="table table-bordered table-striped">
+    <thead>
+    <tr>
+        <th>Request ID</th>
+        <th>Requester</th>
+        <th>Status</th>
+        <th>Test Creation Time</th>
+        <th>Test Environment</th>
+        <th>Template</th>
+        <th>Test PlanID</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for test in Tests %}
+        <tr id="{{ test.request_id }}">
+            <td><a href="test/{{ test.request_id }}">{{ test.request_id }}</a></td>
+            <td>{{ test.requester }}</td>
+            <td>
+                <span class="label label-{{ test.label }}"
+                      id="run_log_status_{{ test.request_id }}">{{ test.status }}</span>
+            </td>
+            <td>{{ test.creation_time }}</td>
+            <td>{{ test.env_id }}</td>
+            <td>{{ test.template }}</td>
+            <td><a href="/">1</a></td>
+            <td><a href="test/{{ test.request_id }}" class="btn btn-mini">TRACK STATUS</a></td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
