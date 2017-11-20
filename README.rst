@@ -32,19 +32,21 @@ Steps to setup the environment:
 
 Create a virtual environment and install the requirements with pip.
 
-```
+.. code-block:: bash
+
     virtualenv venv
     . venv/bin/activate
     cd venv
     git clone <regrun-repo>
     cd regrun
     pip install -r requirements.txt
-```
-Install latest mongodb version for DB transactions.
 
-```
+* Install latest mongodb version for DB transactions.
+
+.. code-block:: bash
+
   cd $(VIRTUALENV_PROJECT_DIR); python manage.py runserver -h '0.0.0.0' -p 5000 -r
-```
+
 
 Note: Entire application is tested on debian-wheezy platform.
 
