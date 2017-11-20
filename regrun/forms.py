@@ -11,6 +11,9 @@ class ScheduleTestForm(Form):
     template = SelectField('Template',
                            choices=[('VBB_API_stations_test', 'VBB_API_stations_test'),
                                     ('VBB_API_journeys_test', 'VBB_API_journeys_test'),
-                                    ('VBB_API_lines_test',
-                                     'VBB_API_lines_test')])
+                                    ('VBB_API_lines_test', 'VBB_API_lines_test'),
+                                    ('VBB_API_locations_test', 'VBB_API_locations_test'),
+                                    ('VBB_API_radar_test', 'VBB_API_radar_test'),
+                                    ('VBB_API_shapes_test', 'VBB_API_shapes_test'),
+                                    ])
     custom_path = StringField('CustomDirectory')
