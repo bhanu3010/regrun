@@ -18,7 +18,8 @@ Demo
 
 ![Imgur](https://i.imgur.com/tynYdZq.gif)
 
-\#\# Installation
+Installation
+------------
 
 Code is tested on 2.7.13 & Python 3.5. Older versions of Python including 2.7 are expected to work.
 
