@@ -11,6 +11,7 @@ Features
 -   Launches requested test suites in background.
 -   Provides real-time updates of each test to browser on web-sockets.
 -   Provides a tests status reporting dashboard.
+-   Real-time updates to all connected clients.
 
 NOTE: Works independent of browser support to websockets.
 
@@ -18,8 +19,7 @@ TODO:
 
 -   Retry failed tests from UI.
 -   Schedule multiple test suites at once.
--   Enable authentication/authorization layer.
--   Real-time updates to all connected clients.
+-   Enable TLS + authentication/authorization layer.
 
 Demo:
 
