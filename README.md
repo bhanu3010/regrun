@@ -3,8 +3,6 @@ regrun
 
 A minimalist client to launch regressions on web sockets.
 
--   Free software: Apache Software License 2.0
-
 Features
 --------
 
