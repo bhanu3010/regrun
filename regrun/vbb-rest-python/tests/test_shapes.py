@@ -29,9 +29,9 @@ class TestShapes(unittest.TestCase):
     def test_get_shape(self):
         shapes = self.shapes.get_shape(id=1269)
         shape = shapes[0]
-        self.assertItemsEqual(shape, [52.38496, 13.19434])
+        self.assertItemsEqual(shape, [52.3849, 13.19434])
 
     def test_get_shape_type(self):
         shapes = self.shapes.get_shape(id=1269)
         shape = shapes[0][0]
-        self.assertIsInstance(shape, float)
+        self.assertIsInstance(shape, int)
