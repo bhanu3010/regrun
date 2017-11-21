@@ -25,7 +25,6 @@ def schedule(message):
     # TODO: Add support for custom test path.
     params = message['data']
 
-    print(params)
     name = params.get('requester')
     interface = params.get('interface')
     template = params.get('template')

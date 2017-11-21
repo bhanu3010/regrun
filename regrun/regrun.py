@@ -51,5 +51,4 @@ def schedule():
 def test(_id):
     """Test route handler to emit individual test results"""
     test_run = TestRunner.get_test_run(int(_id))
-    print(test_run.run_log)
     return render_template("test.html", test=test_run)
