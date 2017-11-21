@@ -7,21 +7,32 @@ import sys
 here = os.path.dirname(os.path.abspath(__file__))
 module_path = os.path.abspath(os.path.join(here, os.pardir))
 sys.path.insert(0, module_path)
+from requests import Response
 
 
 class TestLocations(unittest.TestCase):
-    @staticmethod
-    def do_init():
+    @classmethod
+    def setUp(cls):
         from vbb.client import VBBService
-        client = VBBService()
-        return client
+        cls.client = VBBService()
+        cls.lines = cls.client.lines
 
     def test_get_line(self):
-        client = self.do_init()
-        line = client.lines.get_line(_id='5232_3')
-  #      print(line)
+        line = self.lines.get_line(_id='5232_3')
+        self.assertIsInstance(line, dict)
+
+    def test_get_line_product(self):
+        line = self.lines.get_line(_id='5232_3')
+        self.assertEqual(line['product'], 'bus')
+
+    def test_get_line_mode(self):
+        line = self.lines.get_line(_id='5232_3')
+        self.assertEqual(line['mode'], 'bus')
+
+    def test_get_line_operator(self):
+        line = self.lines.get_line(_id='5232_3')
+        self.assertEqual(line['operator'], u'32')
 
     def test_get_lines(self):
-        client = self.do_init()
-        line = client.lines.get_lines(operator=796)
-   #     print(line)
+        line = self.lines.get_lines(operator=796)
+        self.assertIsInstance(line, Response)

@@ -12,12 +12,33 @@ from vbb.client import VBBService
 
 
 class TestJourneys(unittest.TestCase):
-    @staticmethod
-    def do_init():
-        client = VBBService()
-        return client
+    @classmethod
+    def setUp(cls):
+        cls.client = VBBService()
+        cls.journeys = cls.client.journeys
+        # journeys init per function helps in interleaved execution of tests.
 
-    def test_get_journeys(self):
-        client = self.do_init()
-        journeys = client.journeys.get_journeys(_from='900000017104', _to='900000017101')
+    def test_get_total_journeys(self):
+        journeys = self.journeys.get_journeys(_from='900000017104', _to='900000017101')
+        self.assertEqual(len(journeys), 6)
+
+    def test_get_journey_type(self):
+        journeys = self.journeys.get_journeys(_from='900000017104', _to='900000017101')
+        self.assertIsInstance(journeys[0], dict)
+
+    def test_journey_origin_attr(self):
+        journeys = self.journeys.get_journeys(_from='900000017104', _to='900000017101')
+        journey = journeys[0]
+        self.assertIn('origin', journey)
+
+    def test_journey_origin_attr_value(self):
+        journeys = self.journeys.get_journeys(_from='900000017104', _to='900000017101')
+        journey_origin = journeys[0]['origin']
+        self.assertIsInstance(journey_origin, dict)
+
+    def test_journey_origin_type(self):
+        journeys = self.journeys.get_journeys(_from='900000017104', _to='900000017101')
+        origin_type = journeys[0]['origin']['type']
+        self.assertIn(origin_type, 'station')
+
 
