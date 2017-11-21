@@ -32,7 +32,7 @@ cd regrun
 pip install -r requirements.txt
 ```
 
--   Install latest mongodb version for DB transactions.
+Install latest mongodb and start mongodb-server.
 
 ``` {.sourceCode .bash}
 cd $(VIRTUALENV_PROJECT_DIR); python manage.py runserver -h '0.0.0.0' -p 5000 -r
