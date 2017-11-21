@@ -19,10 +19,11 @@ TODO:
 -   Retry failed tests from UI.
 -   Schedule multiple test suites at once.
 -   Enable authentication/authorization layer.
+-   Real-time updates to all connected clients.
 
 Demo:
 
-![Imgur](https://i.imgur.com/tynYdZq.gifv)
+![Imgur](https://i.imgur.com/tynYdZq.gif)
 
 \#\# Installation
 
