@@ -44,8 +44,8 @@ cd $(VIRTUALENV_PROJECT_DIR); python manage.py runserver -h '0.0.0.0' -p 5000 -r
 
 Note: Entire application is tested on debian-wheezy platform.
 
-TODO:
------
+TODO
+----
 
 -   Retry failed tests from UI.
 -   Enable TLS + authentication/authorization layer.
