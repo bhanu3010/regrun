@@ -13,7 +13,7 @@ Features
 -   Works independent of browser support to websockets.
 
 
-Demo:
+Demo
 -----
 
 ![Imgur](https://i.imgur.com/tynYdZq.gif)
