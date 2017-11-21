@@ -22,7 +22,7 @@ TODO:
 
 Demo:
 
-![Imgur Image](https://i.imgur.com/tynYdZq.gifv)
+![Imgur](https://i.imgur.com/tynYdZq.gifv)
 
 \#\# Installation
 
