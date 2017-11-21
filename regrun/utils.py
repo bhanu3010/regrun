@@ -31,7 +31,7 @@ def launch_test_runner(config, request_id, template, custom_path,
                        status_url, user_id):
     """Main function responsible to launch gevent threads in background.
 
-    :param config: to derive test inputs.
+    :param config: to derive test inputs from config.
     :param request_id: generated for each submitted requests.
     :param template: template to map against vbb API tests.
     :param custom_path: to launch tests.
