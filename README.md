@@ -30,7 +30,7 @@ Create a virtual environment and install the requirements with pip.
 virtualenv venv
 . venv/bin/activate
 cd venv
-git clone <regrun-repo>
+git clone https://github.com/bhanu3010/regrun.git
 cd regrun
 pip install -r requirements.txt
 ```
