@@ -1,4 +1,4 @@
-\# regrun
+regrun
 =========
 
 A minimalist client to launch regressions on web sockets.
@@ -12,8 +12,7 @@ Features
 -   Provides real-time updates of each test to browser on web-sockets.
 -   Provides a tests status reporting dashboard.
 -   Real-time updates to all connected clients irrespective of requester.
-
-NOTE: Works independent of browser support to websockets.
+-   Works independent of browser support to websockets.
 
 TODO:
 
