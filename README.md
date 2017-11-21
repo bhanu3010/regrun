@@ -40,8 +40,8 @@ cd $(VIRTUALENV_PROJECT_DIR); python manage.py runserver -h '0.0.0.0' -p 5000 -r
 
 Note: 
 
-1. Entire application is tested on debian-wheezy platform.
-2. Code is tested on 2.7.13 & Python 3.5. Older versions of Python including 2.7 are expected to work.
+1. Entire application is tested on debian-wheezy platform, Python 2.7.13, 3.5.
+2. Older versions of Python including 2.7 are expected to work.
 
 TODO
 ----
