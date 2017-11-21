@@ -9,7 +9,8 @@ class ScheduleTestForm(Form):
                                                   ('RESTAPI_v_2', 'VBB REST API v2'),
                                                   ('RESTAPI_v_3', 'VBB REST API v3')])
     template = SelectField('Template',
-                           choices=[('VBB_API_stations_test', 'VBB_API_stations_test'),
+                           choices=[
+                                    ('VBB_API_stations_test', 'VBB_API_stations_test'),
                                     ('VBB_API_journeys_test', 'VBB_API_journeys_test'),
                                     ('VBB_API_lines_test', 'VBB_API_lines_test'),
                                     ('VBB_API_locations_test', 'VBB_API_locations_test'),

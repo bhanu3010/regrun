@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-"""Top-level package for vbb-rest-python-sdk-python."""
+"""Pythonic HTTP API for Berlin & Brandenburg public transport"""
 
 __author__ = """Bhanu Chandar P."""
 __email__ = 'bhanuchandar0885@gmail.com'
