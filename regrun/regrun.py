@@ -1,3 +1,4 @@
+import time
 from flask import Blueprint, render_template, request, current_app
 
 from forms import ScheduleTestForm
@@ -23,6 +24,8 @@ def event():
     user_id = params['user_id']
     event = params['event']
     request_id = params['request_id']
+    # print(params)
+    time.sleep(0.1)
 
     ns = current_app.clients.get(user_id)
     if event == 'status':

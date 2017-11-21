@@ -23,6 +23,11 @@ TODO:
 * Schedule multiple test suites at once.
 * Enable authentication/authorization layer.
 
+Demo:
+
+.. image:: https://i.imgur.com/tynYdZq.gifv
+   :alt: Regrun demo
+
 ## Installation
 
 Code is tested on 2.7.13 & Python 3.5. Older versions of Python
