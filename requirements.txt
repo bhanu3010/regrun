@@ -1,5 +1,5 @@
 gevent_subprocess==0.1.2
-Flask==0.10.1
+Flask==0.12.3
 Flask-SocketIO==0.5.0
 Flask-WTF==0.14.2
 Jinja2==2.7.3
